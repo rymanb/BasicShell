@@ -26,6 +26,8 @@ CommandTable::CommandTable()
   table["ps"] = ps_f;
   table["kill"] = kill_f;
   table["clear"] = clear_f;
+  table["run"] = run_program;
+  table["help"] = help_f;
   
 
 }

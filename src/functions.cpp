@@ -7,6 +7,8 @@
 #include <signal.h>
 #include <istream>
 #include <iterator>
+#include <sys/wait.h>
+#include <unistd.h>
 
 Status exit_f(Args args)
 {
@@ -319,5 +321,66 @@ Status clear_f(Args args)
 {
   // clear the screen
   std::cout << "\033[2J\033[1;1H";
+  return Status::SUCCESS;
+}
+
+Status run_program(Args args)
+{
+// try to run the command as a program
+        pid_t pid = fork();
+
+        if (pid == 0)
+        {
+            // child process
+
+            int status = 0;
+            char* argsl[args.size() + 1];
+
+            for (int i = 0; i < (int)args.size(); i++)
+            {
+                argsl[i] = (char*) args[i].c_str();
+                //std::cout << argsl[i] << std::endl;
+            }
+
+            argsl[args.size()] = NULL;
+
+            status = execvp(args[0].c_str(), argsl);
+
+            //std::cout << status << std::endl;
+
+            if (status == -1)
+            {
+                std::cout << "Command not found" << std::endl;
+                exit(-1);
+            }
+
+            exit (0);
+        }
+        else
+        {
+            // parent process waits for child to finish
+            int status = 0;
+            waitpid(pid, &status, 0);
+        }
+
+        return Status::SUCCESS;
+}
+
+Status help_f(Args args)
+{
+  // print help information
+  std::cout << "The following commands are available:" << std::endl;
+  std::cout << "cat" << std::endl;
+  std::cout << "ln" << std::endl;
+  std::cout << "chmod" << std::endl;
+  std::cout << "chown" << std::endl;
+  std::cout << "chgrp" << std::endl;
+  std::cout << "touch" << std::endl;
+  std::cout << "grep" << std::endl;
+  std::cout << "ps" << std::endl;
+  std::cout << "kill" << std::endl;
+  std::cout << "clear" << std::endl;
+  std::cout << "help" << std::endl;
+  std::cout << "exit" << std::endl;
   return Status::SUCCESS;
 }

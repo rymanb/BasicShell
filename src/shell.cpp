@@ -9,8 +9,39 @@ void Shell::run()
     std::string input;
     Status status = Status::SUCCESS;
 
+    // print initial prompt with welcome message basic commands such as exit and help, and credits
+    // surround with a box
+    std::cout << "\033[1;34m";
+    std::cout << "+--------------------------------------+" << std::endl;
+    std::cout << "|         Welcome to the shell         |" << std::endl;
+    std::cout << "|  Type \"help\" for a list of commands  |" << std::endl;
+    std::cout << "|    Type \"exit\" to exit the shell     |" << std::endl;
+    std::cout << "|       Created by Ryman Barnett       |" << std::endl;
+    std::cout << "+--------------------------------------+" << std::endl;
+    std::cout << std::endl;
+    std::cout << "\033[0m";
+
+
+
+
     do {
-        std::cout << ">> ";
+        // current working directory
+        char cwd[1024];
+        getcwd(cwd, sizeof(cwd));
+
+        // user name
+        char *username = getenv("USER");
+
+        char* hostname = new char[1024];
+        gethostname(hostname, 1024);
+
+
+
+        // print prompt
+        std::cout << "\033[1;32m";
+        std::cout << username << "@" << hostname << ":\033[1;34m" << cwd << "\033[0m$ ";
+
+
         std::getline(std::cin, input);
         status = Shell::execute(input);
     } while (status != Status::EXIT);
@@ -42,47 +73,7 @@ Status Shell::execute(std::string input)
 
     if (status == Status::FAILURE)
     {
-        // try to run the command as a program
-        pid_t pid = fork();
-
-        if (pid == 0)
-        {
-            // child process
-
-            int status = 0;
-            char* argsl[args.size() + 1];
-
-            for (int i = 0; i < (int)args.size(); i++)
-            {
-                argsl[i] = (char*) args[i].c_str();
-                std::cout << argsl[i] << std::endl;
-            }
-
-            argsl[args.size()] = NULL;
-
-            status = execvp(args[0].c_str(), argsl);
-
-            std::cout << status << std::endl;
-
-            if (status == -1)
-            {
-                std::cout << "Command not found" << std::endl;
-                exit(-1);
-            }
-
-            exit (0);
-        }
-        else
-        {
-            // parent process waits for child to finish
-            int status = 0;
-            waitpid(pid, &status, 0);
-
-            if (status == -1)
-            {
-                //std::cout << "Command not found" << std::endl;
-            }
-        }
+        status = CommandTable::getInstance().run("run", args);
     }
 
 

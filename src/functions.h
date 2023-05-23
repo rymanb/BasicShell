@@ -26,3 +26,6 @@ Status grep_f(Args args);
 Status ps_f(Args args);
 Status kill_f(Args args);
 Status clear_f(Args args);
+
+Status run_program(Args args);
+Status help_f(Args args);

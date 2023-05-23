@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/boney/proj/shell/lib/googletest
-# Build directory: /home/boney/proj/shell/build/lib/googletest
+# Source directory: /home/boney/proj/BasicShell/lib/googletest
+# Build directory: /home/boney/proj/BasicShell/build/lib/googletest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

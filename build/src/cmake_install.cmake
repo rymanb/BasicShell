@@ -1,4 +1,4 @@
-# Install script for directory: /home/boney/proj/shell/src
+# Install script for directory: /home/boney/proj/BasicShell/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

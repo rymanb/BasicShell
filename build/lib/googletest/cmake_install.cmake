@@ -1,4 +1,4 @@
-# Install script for directory: /home/boney/proj/shell/lib/googletest
+# Install script for directory: /home/boney/proj/BasicShell/lib/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/boney/proj/shell/build/lib/googletest/googlemock/cmake_install.cmake")
+  include("/home/boney/proj/BasicShell/build/lib/googletest/googlemock/cmake_install.cmake")
 
 endif()
 

@@ -67,7 +67,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/boney/proj/shell/build"
+			"value" : "/home/boney/proj/BasicShell/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -151,10 +151,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/clang++"
 		},
 		{
@@ -279,10 +279,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "/usr/bin/clang"
 		},
 		{
@@ -611,7 +611,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/boney/proj/shell"
+			"value" : "/home/boney/proj/BasicShell"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1535,7 +1535,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/boney/proj/shell/build"
+			"value" : "/home/boney/proj/BasicShell/build"
 		},
 		{
 			"name" : "Shell_IS_TOP_LEVEL",
@@ -1559,7 +1559,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/boney/proj/shell"
+			"value" : "/home/boney/proj/BasicShell"
 		},
 		{
 			"name" : "_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX",
@@ -1631,7 +1631,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/boney/proj/shell/build/lib/googletest/googletest/generated"
+			"value" : "/home/boney/proj/BasicShell/build/lib/googletest/googletest/generated"
 		},
 		{
 			"name" : "gmock_BINARY_DIR",
@@ -1643,7 +1643,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/boney/proj/shell/build/lib/googletest/googlemock"
+			"value" : "/home/boney/proj/BasicShell/build/lib/googletest/googlemock"
 		},
 		{
 			"name" : "gmock_IS_TOP_LEVEL",
@@ -1679,7 +1679,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/boney/proj/shell/lib/googletest/googlemock"
+			"value" : "/home/boney/proj/BasicShell/lib/googletest/googlemock"
 		},
 		{
 			"name" : "gmock_build_tests",
@@ -1719,7 +1719,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/boney/proj/shell/build/lib/googletest"
+			"value" : "/home/boney/proj/BasicShell/build/lib/googletest"
 		},
 		{
 			"name" : "googletest-distribution_IS_TOP_LEVEL",
@@ -1743,7 +1743,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/boney/proj/shell/lib/googletest"
+			"value" : "/home/boney/proj/BasicShell/lib/googletest"
 		},
 		{
 			"name" : "gtest_BINARY_DIR",
@@ -1755,7 +1755,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/boney/proj/shell/build/lib/googletest/googletest"
+			"value" : "/home/boney/proj/BasicShell/build/lib/googletest/googletest"
 		},
 		{
 			"name" : "gtest_IS_TOP_LEVEL",
@@ -1779,7 +1779,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/boney/proj/shell/lib/googletest/googletest"
+			"value" : "/home/boney/proj/BasicShell/lib/googletest/googletest"
 		},
 		{
 			"name" : "gtest_build_samples",

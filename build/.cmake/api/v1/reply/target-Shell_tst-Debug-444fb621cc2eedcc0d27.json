@@ -60,17 +60,17 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/home/boney/proj/shell/src"
+					"path" : "/home/boney/proj/BasicShell/src"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/boney/proj/shell/lib/googletest/googletest/include"
+					"path" : "/home/boney/proj/BasicShell/lib/googletest/googletest/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/boney/proj/shell/lib/googletest/googletest"
+					"path" : "/home/boney/proj/BasicShell/lib/googletest/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -93,11 +93,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "Shell_lib::@145eef247bfb46b6828c"
+			"id" : "gtest::@7e3677ed2a4dc8c8eb88"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "gtest::@7e3677ed2a4dc8c8eb88"
+			"id" : "Shell_lib::@145eef247bfb46b6828c"
 		}
 	],
 	"id" : "Shell_tst::@bc08d5df49ffa9ee5cce",

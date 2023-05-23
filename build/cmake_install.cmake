@@ -1,4 +1,4 @@
-# Install script for directory: /home/boney/proj/shell
+# Install script for directory: /home/boney/proj/BasicShell
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,9 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/boney/proj/shell/build/src/cmake_install.cmake")
-  include("/home/boney/proj/shell/build/tst/cmake_install.cmake")
-  include("/home/boney/proj/shell/build/lib/googletest/cmake_install.cmake")
+  include("/home/boney/proj/BasicShell/build/src/cmake_install.cmake")
+  include("/home/boney/proj/BasicShell/build/tst/cmake_install.cmake")
+  include("/home/boney/proj/BasicShell/build/lib/googletest/cmake_install.cmake")
 
 endif()
 
@@ -58,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/boney/proj/shell/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/boney/proj/BasicShell/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

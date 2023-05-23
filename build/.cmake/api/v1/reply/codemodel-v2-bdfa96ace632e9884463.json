@@ -177,49 +177,49 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "Shell_lib::@145eef247bfb46b6828c",
-					"jsonFile" : "target-Shell_lib-Debug-a3d80b92dc09b5119936.json",
+					"jsonFile" : "target-Shell_lib-Debug-6a0bf361cb04c89a1ab9.json",
 					"name" : "Shell_lib",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "Shell_run::@145eef247bfb46b6828c",
-					"jsonFile" : "target-Shell_run-Debug-67667c5a96d8b112da21.json",
+					"jsonFile" : "target-Shell_run-Debug-9f124997e2803074c062.json",
 					"name" : "Shell_run",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "Shell_tst::@bc08d5df49ffa9ee5cce",
-					"jsonFile" : "target-Shell_tst-Debug-094ede7de0febc11bfc8.json",
+					"jsonFile" : "target-Shell_tst-Debug-444fb621cc2eedcc0d27.json",
 					"name" : "Shell_tst",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "gmock::@7712283c01f504ef6d93",
-					"jsonFile" : "target-gmock-Debug-851eb8cb0a5b9d667396.json",
+					"jsonFile" : "target-gmock-Debug-b34dde8a5a841d8f8019.json",
 					"name" : "gmock",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 4,
 					"id" : "gmock_main::@7712283c01f504ef6d93",
-					"jsonFile" : "target-gmock_main-Debug-5cce8e9b604358a0d214.json",
+					"jsonFile" : "target-gmock_main-Debug-eb4a71c19e5bc6132067.json",
 					"name" : "gmock_main",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 5,
 					"id" : "gtest::@7e3677ed2a4dc8c8eb88",
-					"jsonFile" : "target-gtest-Debug-85c7ddcd86e6435a11e2.json",
+					"jsonFile" : "target-gtest-Debug-713abebf44227f83e8ec.json",
 					"name" : "gtest",
 					"projectIndex" : 3
 				},
 				{
 					"directoryIndex" : 5,
 					"id" : "gtest_main::@7e3677ed2a4dc8c8eb88",
-					"jsonFile" : "target-gtest_main-Debug-5525e122fbaac740b100.json",
+					"jsonFile" : "target-gtest_main-Debug-36ded93b8d92cfa773fe.json",
 					"name" : "gtest_main",
 					"projectIndex" : 3
 				}
@@ -229,8 +229,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/boney/proj/shell/build",
-		"source" : "/home/boney/proj/shell"
+		"build" : "/home/boney/proj/BasicShell/build",
+		"source" : "/home/boney/proj/BasicShell"
 	},
 	"version" : 
 	{

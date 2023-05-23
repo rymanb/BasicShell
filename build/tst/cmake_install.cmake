@@ -1,4 +1,4 @@
-# Install script for directory: /home/boney/proj/shell/tst
+# Install script for directory: /home/boney/proj/BasicShell/tst
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
